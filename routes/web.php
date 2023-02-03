@@ -18,12 +18,16 @@ Route::get('/', function () {
     return view('LoginPage');
 });
 
-Route::post('/RegisterPage',[Controller::class, "Create"])->name('createUser');
-
-
 Route::get('/RegisterPage', function () {
     return view('RegisterPage');
 });
+
+Route::post('/LoginPage',[Controller::class, "Login"])->name('connectUser');
+Route::post('/RegisterPage',[Controller::class, "Create"])->name('createUser');
+
+
+
+
 
 
 
