@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('table__type_permis', function (Blueprint $table) {
+        Schema::create('type_permis', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
         });

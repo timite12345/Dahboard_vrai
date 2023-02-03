@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('table_etbsante', function (Blueprint $table) {
+        Schema::create('etbsante', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
             $table->integer("refEtb");

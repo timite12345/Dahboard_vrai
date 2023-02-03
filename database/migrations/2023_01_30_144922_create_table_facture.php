@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('table_facture', function (Blueprint $table) {
+        Schema::create('facture', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
             $table->integer("idFacture");

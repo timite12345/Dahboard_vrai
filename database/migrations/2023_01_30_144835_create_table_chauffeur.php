@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('table_chauffeur', function (Blueprint $table) {
+        Schema::create('chauffeur', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
             $table->boolean("estDisponibl")->default(true);

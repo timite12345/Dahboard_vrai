@@ -26,10 +26,11 @@ class Controller extends BaseController
         $data['adresse'] = $request->adresse ;
         $data['email'] = $request->email ;
         $data['password'] = $request->password ;
-
-        $save = personnes::create($data);
+        //dd($data);
+        personnes::create($data);
         session()->flash('Succes','Un nouvel utilisateur ajouté');
 
+        return redirect('/welcome');
     }
 
     public function Login(LoginRequest $request){
