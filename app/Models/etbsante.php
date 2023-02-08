@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class etbsante extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'refEtb',
+        'nom',
+        'adresseEtb',
+        'email',
+        'tel',
+        'estValide'
+    ];
 }

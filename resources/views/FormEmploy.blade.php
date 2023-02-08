@@ -449,35 +449,37 @@
               <!-- /.card-header -->
               <!-- form start -->
 
-              <form  action='' method="post">
+              <form  action="{{route('createEtbSante')}}" method="post">
                 @csrf
                 <div class="card-body">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">ref Etb</label>
+                    <input type="tel" name="refEtb" class="form-control" id="exampleInputEmail1" placeholder="Enter ref Etb">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Nom</label>
+                    <input type="text" name="nom" class="form-control" id="exampleInputPrenom" placeholder="Enter le Nom">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">adresse Etb</label>
+                    <input type="tel" name="adresseEtb" class="form-control" id="exampleInputEmail1" placeholder="Enter adresse Etb">
+                  </div>
+
                   <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
                     <input type="text" name="email" class="form-control" id="exampleInputNom" placeholder="Enter email">
                   </div>
+
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Nom</label>
-                    <input type="text" name="name" class="form-control" id="exampleInputPrenom" placeholder="Enter le Nom">
+                    <label for="exampleInputEmail1">tel</label>
+                    <input type="tel" name="tel" class="form-control" id="exampleInputEmail1" placeholder="Enter le contact Etb">
                   </div>
 
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Prenom</label>
-                    <input type="text" name="prenom" class="form-control" id="exampleInputNumTel" placeholder="Enter le Prenom">
+                    <label for="exampleInputEmail1">estValide</label>
+                    <input type="text" name="estValide" class="form-control" id="exampleInputNumTel" placeholder="estValide">
                   </div>
-
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Num Tel</label>
-                    <input type="tel" name="numtel" class="form-control" id="exampleInputEmail1" placeholder="Enter le numero de telephone">
-                  </div>
-
-
-
-
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                      <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
 
                   <!-- /.card-body -->
                   <div class="card-footer">

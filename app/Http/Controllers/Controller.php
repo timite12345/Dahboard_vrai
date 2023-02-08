@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 use App\Providers\AppServiceProovider;
 use App\Models\personnes;
+use App\Models\etbsante;
+
 
 class Controller extends BaseController
 {
@@ -29,6 +31,22 @@ class Controller extends BaseController
         //dd($data);
         personnes::create($data);
         session()->flash('Succes','Un nouvel utilisateur ajouté');
+
+        return redirect('/welcome');
+    }
+
+    public function CreateHopital(Request $request){
+        $request->password = Hash::make($request->password);
+        $data['refEtb'] = $request->refEtb ;
+        $data['nom'] = $request->nom ;
+        $data['adresseEtb'] = $request->adresseEtb ;
+        $data['email'] = $request->email ;
+        $data['tel'] = $request->tel ;
+        $data['estValide'] = $request->estValide ;
+
+        //dd($data);
+        etbsante::create($data);
+        session()->flash('Succes','Un nouvel hopital ajouté');
 
         return redirect('/welcome');
     }
