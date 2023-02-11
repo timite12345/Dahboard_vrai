@@ -49,6 +49,6 @@ Route::get('/HistoriqueMission', function () {
     return view('HistoriqueMission');
 });
 
-Route::get('/RegisterPage', function () {
-    return view('RegisterPage');
+Route::get('/chartjs', function () {
+    return view('chartjs');
 });

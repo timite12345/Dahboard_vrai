@@ -623,7 +623,87 @@
               <!-- /.card-body -->
             </div>
             <!-- /.card -->
+            <div class="row">
+          <div class="col-sm-6">
+            <div class="card card-default">
+              <div class="card-header">
 
+                <h3 class="card-title">Coordonnées du chauffeur</h3>
+              </div>
+              </div>
+              <div class="card-body p-0">
+                <div class="bs-stepper">
+                  <div class="bs-stepper-header" role="tablist">
+                    <!-- your steps here -->
+                    <div class="step" data-target="#logins-part">
+                      <button type="button" class="step-trigger" role="tab" aria-controls="logins-part" id="logins-part-trigger">
+                        
+                      </button>
+                    </div>
+                    <div class="line"></div>
+                    <div class="step" data-target="#information-part">
+                      <button type="button" class="step-trigger" role="tab" aria-controls="information-part" id="information-part-trigger">
+                     
+                      </button>
+                    </div>
+                  </div>
+                  <div class="bs-stepper-content">
+                    <!-- your steps content here -->
+                    <div id="logins-part" class="content" role="tabpanel" aria-labelledby="logins-part-trigger">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Adresse Email du chauffeur</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Son identifiant</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="identifiant">
+
+                    <div id="information-part" class="content" role="tabpanel" aria-labelledby="information-part-trigger">
+                      <div class="form-group">
+
+                        <div class="input-group">
+
+                        </div>
+                      </div>
+
+
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+                      <button class="btn btn-primary" onclick="stepper.next()">Next</button>
+                    </div>
+                    <div id="information-part" class="content" role="tabpanel" aria-labelledby="information-part-trigger">
+                      <div class="form-group">
+                        <label for="exampleInputFile">File input</label>
+                        <div class="input-group">
+                          <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="exampleInputFile">
+                            <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                          </div>
+                          <div class="input-group-append">
+                            <span class="input-group-text">Upload</span>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="btn btn-primary" onclick="stepper.previous()">Previous</button>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.card-body -->
+              <div class="card-footer">
+              </div>
+            </div>
+            <!-- /.card -->
+          </div>
+        </div>
+        <!-- /.row -->
+            
             <!-- iCheck -->
             <div class="card card-success">
               <div class="card-header">
@@ -800,95 +880,7 @@
                   </div>
                 </div>
               </div>
-              <!-- /.card-body -->
-              <div class="card-footer">
-
-              </div>
-            </div>
-            <!-- /.card -->
-
-
-        <!-- /.row -->
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card card-default">
-              <div class="card-header">
-
-                <h3 class="card-title">Coordonnées du chauffeur</h3>
-              </div>
-
-                <h3 class="card-title">bs-stepper</h3>
-              </div>
-              <div class="card-body p-0">
-                <div class="bs-stepper">
-                  <div class="bs-stepper-header" role="tablist">
-                    <!-- your steps here -->
-                    <div class="step" data-target="#logins-part">
-                      <button type="button" class="step-trigger" role="tab" aria-controls="logins-part" id="logins-part-trigger">
-                        <span class="bs-stepper-circle">1</span>
-                        <span class="bs-stepper-label">Logins</span>
-                      </button>
-                    </div>
-                    <div class="line"></div>
-                    <div class="step" data-target="#information-part">
-                      <button type="button" class="step-trigger" role="tab" aria-controls="information-part" id="information-part-trigger">
-                        <span class="bs-stepper-circle">2</span>
-                        <span class="bs-stepper-label">Various information</span>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="bs-stepper-content">
-                    <!-- your steps content here -->
-                    <div id="logins-part" class="content" role="tabpanel" aria-labelledby="logins-part-trigger">
-                      <div class="form-group">
-                        <label for="exampleInputEmail1">Adresse Email du chauffeur</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleInputPassword1">Son identifiant</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="identifiant">
-
-                    <div id="information-part" class="content" role="tabpanel" aria-labelledby="information-part-trigger">
-                      <div class="form-group">
-
-                        <div class="input-group">
-
-                        </div>
-                      </div>
-
-
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                      </div>
-                      <button class="btn btn-primary" onclick="stepper.next()">Next</button>
-                    </div>
-                    <div id="information-part" class="content" role="tabpanel" aria-labelledby="information-part-trigger">
-                      <div class="form-group">
-                        <label for="exampleInputFile">File input</label>
-                        <div class="input-group">
-                          <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="exampleInputFile">
-                            <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                          </div>
-                          <div class="input-group-append">
-                            <span class="input-group-text">Upload</span>
-                          </div>
-                        </div>
-                      </div>
-                      <button class="btn btn-primary" onclick="stepper.previous()">Previous</button>
-                      <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.card-body -->
-              <div class="card-footer">
-              </div>
-            </div>
+             
             <!-- /.card -->
           </div>
         </div>
@@ -897,48 +889,24 @@
           <div class="col-md-12">
             <div class="card card-default">
               <div class="card-header">
-                <h3 class="card-title">Action <small><em> à faire</em></small></h3>
-
-                <h3 class="card-title">Dropzone.js <small><em>jQuery File Upload</em> like look</small></h3>
+               
               </div>
               <div class="card-body">
                 <div id="actions" class="row">
                   <div class="col-lg-12">
                     <div class="btn-group w-100">
-                      <span class="btn btn-dark col fileinput-button">
-                        <i class="fas fa-plus"></i>
-                        <span>Ajouter des documents</span>
-                      </span>
-                      <button type="submit" class="btn btn-success col start">
-                        <i class="fas fa-submit"></i>
-                        <span>Valider la mission</span>
-                      </button>
-                      <button type="reset" class="btn btn-danger col cancel">
-                        <i class="fas fa-times-circle"></i>
-                        <span>Annuler</span>
-
-                      <span class="btn btn-success col fileinput-button">
-                        <i class="fas fa-plus"></i>
-                        <span>Add files</span>
-                      </span>
+                     
                       <button type="submit" class="btn btn-primary col start">
                         <i class="fas fa-upload"></i>
-                        <span>Start upload</span>
+                        <span>Submit</span>
                       </button>
                       <button type="reset" class="btn btn-warning col cancel">
                         <i class="fas fa-times-circle"></i>
-                        <span>Cancel upload</span>
+                        <span>Cancel </span>
                       </button>
                     </div>
                   </div>
-                  <div class="col-lg-6 d-flex align-items-center">
-                    <div class="fileupload-process w-100">
-                      <div id="total-progress" class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
-                        <div class="progress-bar progress-bar-success" style="width:0%;" data-dz-uploadprogress></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                
                 <div class="table table-striped files" id="previews">
                   <div id="template" class="row mt-2">
                     <div class="col-auto">
@@ -956,27 +924,15 @@
                           <div class="progress-bar progress-bar-success" style="width:0%;" data-dz-uploadprogress></div>
                         </div>
                     </div>
-                    <div class="col-auto d-flex align-items-center">
-                      <div class="btn-group">
-                        <button class="btn btn-primary start">
-                          <i class="fas fa-upload"></i>
-                          <span>Start</span>
-                        </button>
-                        <button data-dz-remove class="btn btn-warning cancel">
-                          <i class="fas fa-times-circle"></i>
-                          <span>Cancel</span>
-                        </button>
-                        <button data-dz-remove class="btn btn-danger delete">
-                          <i class="fas fa-trash"></i>
-                          <span>Delete</span>
-                        </button>
-                      </div>
-                    </div>
+                   
                   </div>
                 </div>
               </div>
               <!-- /.card-body -->
-
+              <div class="card-footer">
+               
+              </div>
+            </div>
             <!-- /.card -->
           </div>
         </div>
